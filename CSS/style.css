@@ -52,8 +52,227 @@ table {
   border-spacing: 0;
 }
 
-* {
-  background-color: red;
+.banner {
+  margin-top: -24px;
+  background-color: dimgray;
+  background-blend-mode: overlay;
+  background-image: url(/img/banner.jpg);
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+}
+.banner .mobile-nav {
+  display: none;
+}
+.banner .nav-container {
+  padding-top: 40px;
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  width: 100%;
+  align-content: center;
+}
+.banner .nav-container .pc-nav {
+  background-color: white;
+  width: 70%;
+  height: 31%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.banner .nav-container .pc-nav .nav-icons {
+  background-color: brown;
+  width: 3rem;
+  height: 3rem;
+}
+.banner .nav-container .pc-nav .center {
+  justify-content: center;
+  text-align: center;
+}
+.banner .nav-container .pc-nav .center ul {
+  gap: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner .nav-container .pc-nav .center ul a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+.banner .nav-container .pc-nav .center ul a img {
+  height: 2rem;
+}
+
+#why {
+  padding: 3rem 0;
+}
+#why .container .row .left img {
+  width: 100%;
+}
+#why .container .row .left .cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -1em;
+}
+#why .container .row .left .cards .card {
+  width: 30%;
+  height: 10vh;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(164, 15, 30);
+  border: 2px solid white;
+}
+#why .container .row .right {
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+}
+#why .container .row .right .why-text {
+  font-weight: 500;
+}
+#why .container .row .right .why-text span {
+  color: rgb(164, 15, 30);
+}
+#why .container .row .right .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0;
+  border: 3px solid rgb(164, 15, 30);
+  color: rgb(164, 15, 30);
+  padding-top: -5px;
+}
+#why .container .row .right .btn a {
+  text-decoration: none;
+  color: rgb(164, 15, 30);
+  font-weight: 600;
+}
+
+#projects {
+  padding: 3rem;
+  height: 80vh;
+}
+#projects .container .row1 {
+  width: 100%;
+  background: blu;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+#projects .container .row1 .left {
+  background: red;
+  height: 45vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+#projects .container .row1 .left .projects-h3 {
+  font-weight: 500;
+}
+#projects .container .row1 .left .projects-h2 {
+  font-weight: 500;
+}
+#projects .container .row1 .left .projects-text {
+  font-weight: 100;
+}
+#projects .container .row1 .right {
+  width: 100%;
+}
+#projects .container .row1 .right .pictures1 .img1 {
+  background-image: url(/img/project\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  width: 25vh;
+}
+#projects .container .row1 .right .pictures2 {
+  display: flex;
+}
+#projects .container .row1 .right .pictures2 img {
+  border: 1px solid rgb(164, 15, 30);
+  height: 80px;
+}
+
+#donations {
+  margin: 4rem 0;
+  width: 100%;
+  height: 80vh;
+  background-color: dimgrey;
+  background-image: url(/img/donate.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#donations .txt {
+  padding-left: 10rem;
+  padding-top: 10rem;
+  color: white;
+}
+#donations .txt .donations-h3 {
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 4rem;
+}
+#donations .txt .btns {
+  gap: 100px;
+}
+#donations .txt .btns a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+}
+#donations .txt .btns .btn1 {
+  border: 2px solid white;
+  width: 30%;
+  border-radius: 0;
+  padding-right: 10px;
+}
+#donations .txt .btns .btn1:hover {
+  border: 4px solid rgb(164, 15, 30);
+}
+#donations .txt .btns .btn2 {
+  border-radius: 0;
+  width: 10%;
+  background: rgb(164, 15, 30);
+}
+#donations .txt .btns .btn2:hover {
+  background: white;
+}
+
+#text {
+  height: 60vh;
+}
+#text .text-container {
+  border: 3px solid rgb(164, 15, 30);
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem auto;
+}
+#text .text-container .text1 {
+  width: 70%;
+  display: flex;
+  text-align: center;
+}
+#text .text-container .text1 .text-p {
+  font-weight: 200;
+  font-weight: 400;
+}
+
+#footer {
+  width: 100%;
+  height: 35vh;
+  background-color: rgb(164, 15, 30);
+}
+#footer .container .row .col-text {
+  padding-top: 30px;
 }
 
 /*
@@ -71,8 +290,51 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  #why .container .row .left img {
+    height: 30vh;
+    width: 100%;
+  }
+  #why .container .row .left .cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -2em;
+  }
+  #why .container .row .left .cards .card {
+    width: 12rem;
+    height: 9rem;
+  }
+}
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #why .container .row .left img {
+    height: auto;
+  }
+  #why .container .row .left .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -2em;
+  }
+  #why .container .row .left .cards .card {
+    width: 9rem;
+    height: 9rem;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #why .container .row .left .cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -2em;
+  }
+  #why .container .row .left .cards .card {
+    width: 12rem;
+    height: 9rem;
+  }
+}
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Custom media queries

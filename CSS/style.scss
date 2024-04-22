@@ -1,3 +1,5 @@
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,9 +48,341 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*{
-    background-color: red;
+
+//phone styles
+
+
+//banner section mai
+.banner{
+    margin-top: -24px;
+    background-color: dimgray;
+    background-blend-mode: overlay;
+    background-image: url(/img/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+
+    .mobile-nav{
+        display: none;
+         
+        
+        
+    }
+  .nav-container{ 
+    padding-top: 40px;      
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    
+
+    .pc-nav{
+        
+        background-color: white;
+        width: 70% ;
+        height: 31%;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+        
+        
+
+        .nav-icons{
+            background-color: brown;
+            width: 3rem;
+            height: 3rem;
+
+
+        }
+
+        .center{
+                 justify-content: center;
+                 text-align: center;
+            
+
+            ul{
+                gap: 70px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                
+
+                a{
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: black;
+
+
+                    img{
+                        height: 2rem;
+
+                    
+                    }
+                }
+
+               
+
+               
+
+            }
+        }
+    }
 }
+
+}
+
+//why us section
+#why{
+    padding: 3rem 0 ;
+
+    .container{
+        .row{
+            .left{
+                img{
+                    width: 100%;
+                }
+
+                .cards{
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: -1em;
+
+                    .card{
+                        width: 30%;
+                        height: 10vh;
+                        border-radius: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        background-color: rgb(164, 15, 30) ;
+                        border: 2px solid white;
+                        
+                    }
+
+                }
+            }
+
+            .right{
+            
+                display: flex;
+                flex-direction: column;
+                gap: -10px;
+
+                .why-text{
+                    font-weight: 500;
+
+                    span{
+                        color: rgb(164, 15, 30);
+                    }
+                }
+
+                .btn{
+                    width: fit-content;
+                    border-radius: 0;
+                    border: 3px solid rgb(164, 15, 30);
+                    color: rgb(164, 15, 30);
+                    padding-top:-5px ;
+
+                    a{
+                        text-decoration: none;
+                        color: rgb(164, 15, 30);
+                        font-weight: 600;
+                    }
+                }
+            }
+
+          
+        }
+    }
+}
+
+//projects section
+#projects{
+    padding: 3rem;
+    height: 80vh;
+    .container{
+        .row1{
+            width: 100%;
+            background: blu;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+           
+            
+            
+            .left{
+                background: red;  
+                height: 45vh;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+                margin-top: 20px;
+
+                .projects-h3{
+
+                    font-weight: 500;
+                }
+
+                .projects-h2{
+                    font-weight: 500;
+                }
+
+                .projects-text{
+                    font-weight: 100;
+                    
+                }
+            }
+
+            .right{
+                width:100%;
+
+                
+                .pictures1{
+
+                    .img1{
+                        background-image: url(/img/project\ 1.jpg);
+                        background-size: cover;
+                        background-position:center ;
+                        height: 25vh;
+                        width: 25vh;
+                    
+                    }
+
+
+                }
+
+                .pictures2{
+                    display: flex;
+
+                    img{
+                        border: 1px solid rgb(164, 15, 30);
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+//donations section
+#donations{
+    margin: 4rem 0;
+    width: 100%;
+    height: 80vh;
+    background-color: dimgrey;
+    background-image: url(/img/donate.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    .txt{
+        padding-left: 10rem;
+        padding-top: 10rem;
+        color: white;
+
+        .donations-h3{
+            font-weight: 500;
+            font-size: 40px;
+            padding-bottom: 4rem;
+        }
+
+        
+
+        .btns{
+            gap: 100px;
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: flex;
+                justify-content: left;
+                
+            }
+            
+
+            .btn1{
+                border: 2px solid white;
+                width: 30%;
+                border-radius: 0;
+                padding-right: 10px;
+
+            }
+
+            .btn1:hover{
+                border: 4px solid rgb(164, 15, 30);
+            }
+
+            .btn2{
+                border-radius: 0;
+                width: 10%;
+                background: rgb(164, 15, 30);
+
+            }
+            .btn2:hover{
+                    background: white;
+                    
+                }
+        }
+
+    }
+    
+    
+
+}
+
+#text{height: 60vh;
+   
+    
+    .text-container{
+    border: 3px solid rgb(164, 15, 30);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto;
+
+    .text1{
+        width: 70%;
+        display: flex;
+        text-align: center;
+
+     
+
+        .text-p{
+            font-weight: 200;
+            font-weight: 400;
+        }
+    }
+
+   
+
+    }
+}
+
+
+#footer{ 
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(164, 15, 30);
+    .container{
+        .row{
+           .col-text{
+            padding-top: 30px;
+
+           } 
+        }
+    }
+}
+
+
+
+
 
 
 
@@ -78,16 +412,85 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-
+    #why{
+        
+        .container{
+            .row{
+                .left{
+                    img{
+                        height:30vh ;
+                        width: 100%;
+                    }
+                    .cards{
+                        display: flex;
+                        justify-content: center;
+                        gap: 2rem;
+                        margin-top: -2em;
+    
+                        .card{
+                            width: 12rem;
+                            height: 9rem;  
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
 }
+    
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    #why{
+        .container{
+            .row{
+                .left{
 
+                    img{
+                        height: auto;
+                    }
+                    .cards{
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        margin-top: -2em;
+    
+                        .card{
+                            width: 9rem;
+                            height: 9rem;  
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
+    #why{
+        
+        .container{
+            .row{
+                .left{
+                    .cards{
+                        display: flex;
+                        justify-content: center;
+                        gap: 2rem;
+                        margin-top: -2em;
+    
+                        .card{
+                            width: 12rem;
+                            height: 9rem;  
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
     
 }
 
