@@ -52,7 +52,7 @@ table {
 //phone styles
 
 
-//banner section mai
+//banner section start
 .banner{
     margin-top: -24px;
     background-color: dimgray;
@@ -60,6 +60,8 @@ table {
     background-image: url(/img/banner.jpg);
     height: 100vh;
     background-size: cover;
+    background-position-x: -190px;
+    background-repeat: no-repeat;
     width: 100%;
 
     .mobile-nav{
@@ -72,7 +74,7 @@ table {
     padding-top: 40px;      
     display: flex;
     height: 25vh;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     align-content: center;
     
@@ -80,10 +82,14 @@ table {
     .pc-nav{
         
         background-color: white;
-        width: 70% ;
+        width: 80% ;
         height: 31%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 15px black;
+        display: none;
+
         
         
         
@@ -92,7 +98,7 @@ table {
         .nav-icons{
             background-color: brown;
             width: 3rem;
-            height: 3rem;
+            height: 3.1rem;
 
 
         }
@@ -100,6 +106,7 @@ table {
         .center{
                  justify-content: center;
                  text-align: center;
+                 align-items: center;
             
 
             ul{
@@ -108,12 +115,16 @@ table {
                 justify-content: space-evenly;
                 align-items: center;
 
-                
+                a:hover{
+                    color: black;
+                    text-decoration: line-through;
+                }
 
                 a{
                     text-decoration: none;
                     font-weight: 500;
-                    color: black;
+                    color: rgb(164, 15, 30);
+                   
 
 
                     img{
@@ -133,27 +144,32 @@ table {
 }
 
 }
+// banner section end
 
-//why us section
+//why us section start
 #why{
-    padding: 3rem 0 ;
+    margin: 5rem 0;
 
     .container{
         .row{
-            .left{
+            .left1{
+                
                 img{
                     width: 100%;
+                    height: 15.65rem;
+                    
+                    
                 }
 
                 .cards{
                     display: flex;
                     justify-content: center;
                     gap: 10px;
-                    margin-top: -1em;
+                    margin-top: -4em;
 
                     .card{
                         width: 30%;
-                        height: 10vh;
+                        height: 20vh;
                         border-radius: 0;
                         display: flex;
                         align-items: center;
@@ -171,7 +187,13 @@ table {
             
                 display: flex;
                 flex-direction: column;
-                gap: -10px;
+                gap: 10px;
+
+                .whyh3{
+                    margin-top: 5px;
+                    color: rgb(164, 15, 30);
+                    
+                }
 
                 .why-text{
                     font-weight: 500;
@@ -186,12 +208,20 @@ table {
                     border-radius: 0;
                     border: 3px solid rgb(164, 15, 30);
                     color: rgb(164, 15, 30);
-                    padding-top:-5px ;
+                    padding-top:-50px ;
 
                     a{
                         text-decoration: none;
                         color: rgb(164, 15, 30);
                         font-weight: 600;
+                    }
+                }
+
+                .btn:hover{
+                    background-color: rgb(164, 15, 30);
+
+                    a{
+                        color: white;
                     }
                 }
             }
@@ -200,79 +230,139 @@ table {
         }
     }
 }
+//why us end
 
-//projects section
+//projects section start
 #projects{
     padding: 3rem;
-    height: 80vh;
-    .container{
-        .row1{
+        
+        .row{
+            height: 70vh;
             width: 100%;
-            background: blu;
-            display: flex;
-            flex-direction: row;
-            height: 100vh;
-           
-            
-            
             .left{
-                background: red;  
-                height: 45vh;
+                background: rgb(164, 15, 30);
+                height: 70vh;
+                width: 100%;
                 color: white;
                 display: flex;
                 flex-direction: column;
-                margin-left: 40px;
-                margin-top: 20px;
+                padding: 20px 50px;
+                
+               
 
-                .projects-h3{
 
+                .projects-h2{
+
+                    font-size: 60px;
                     font-weight: 500;
                 }
 
-                .projects-h2{
+                .projects-h3{
                     font-weight: 500;
+                    font-size: 2rem;
                 }
 
                 .projects-text{
-                    font-weight: 100;
+                    padding-top: 50px;
+                    font-weight: 500;
+                    width: 90%;
                     
-                }
-            }
-
-            .right{
-                width:100%;
-
-                
-                .pictures1{
-
-                    .img1{
-                        background-image: url(/img/project\ 1.jpg);
-                        background-size: cover;
-                        background-position:center ;
-                        height: 25vh;
-                        width: 25vh;
-                    
-                    }
-
-
-                }
-
-                .pictures2{
-                    display: flex;
-
-                    img{
-                        border: 1px solid rgb(164, 15, 30);
-                        height: 80px;
+                    .icons{
+                        img{
+                            background-repeat: no-repeat;
+                        }
                     }
                 }
             }
+
+            
         }
-    }
-} 
 
-//donations section
+        .rightt{
+           
+            .top-pictures{
+                display: flex;
+                height: fit-content;
+                width: 100%;
+
+                .pictures1{
+                    background-image: url(/img/project\ 1.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.77vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+                    
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 15px;
+                    }
+
+                    .pictures1:hover{
+
+                        p{
+                           bottom: 45px; 
+                        }
+
+                        
+                    }
+                }
+                .pictures2{
+                    background-image: url(/img/project\ 2.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.77vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures3{
+                    background-image: url(/img/project\ 3.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.77vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures4{
+                    background-image: url(/img/project\ 4.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures5{
+                    background-image: url(/img/project\ 5.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures6{
+                    background-image: url(/img/project\ 6.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+
+            }
+            
+        }
+    //}
+} 
+//projects section end
+
+//donations section start
 #donations{
-    margin: 4rem 0;
+    margin: 35rem 0;
     width: 100%;
     height: 80vh;
     background-color: dimgrey;
@@ -281,7 +371,7 @@ table {
     background-size: cover;
 
     .txt{
-        padding-left: 10rem;
+        padding-left: 3rem;
         padding-top: 10rem;
         color: white;
 
@@ -294,7 +384,31 @@ table {
         
 
         .btns{
-            gap: 100px;
+            gap: 10px;
+            display: flex;
+
+            form{
+                input{
+                    width: 10rem;
+                    height: 40px;
+                    background-color:transparent ;
+                    border: 2px solid white;
+                }
+
+                input::placeholder{
+                    color: white;
+                }
+            }
+
+            form:hover{
+                input{
+                    border: 2px solid rgb(164, 15, 30);
+                }
+
+                input::placeholder{
+                    color: white;
+                }
+            }
 
             a{
                 color: white;
@@ -305,26 +419,27 @@ table {
             }
             
 
-            .btn1{
-                border: 2px solid white;
-                width: 30%;
-                border-radius: 0;
-                padding-right: 10px;
-
-            }
-
+           
             .btn1:hover{
-                border: 4px solid rgb(164, 15, 30);
+                background-color: transparent;
             }
 
             .btn2{
                 border-radius: 0;
-                width: 10%;
+                width: 30%;
+                height: 40px;
+                font-size: 15px;
                 background: rgb(164, 15, 30);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
 
             }
             .btn2:hover{
-                    background: white;
+                    background: transparent;
+                    border: 2px solid rgb(164, 15, 30);
                     
                 }
         }
@@ -334,8 +449,12 @@ table {
     
 
 }
+// donations section end
 
-#text{height: 60vh;
+// text section start
+#text{height: 100vh;
+    
+     margin-top: -30rem;
    
     
     .text-container{
@@ -348,38 +467,149 @@ table {
     margin: 8rem auto;
 
     .text1{
-        width: 70%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        justify-content: center;
 
-     
+         .text-h3{
+            color: black;
+            
+        }
 
         .text-p{
             font-weight: 200;
             font-weight: 400;
+
         }
+
+        
     }
 
    
 
     }
 }
+// text section end
 
-
-#footer{ 
+//footer section start
+#footer{    
     width: 100%;
-    height: 35vh;
+    height: 80vh;
     background-color: rgb(164, 15, 30);
     .container{
-        .row{
+        .row{ padding-top: 30px;
+            display: flex;
+            color: white;
            .col-text{
-            padding-top: 30px;
+           
+
+            .footer-text{
+                color: rgba(255, 255, 255, 0.567);
+            }
+
+            .bottom{
+                
+                .left{
+                    display: flex;
+                    gap: 5px;
+
+                    .first{
+                        size: 0cap;
+
+                        
+                    }
+                    
+                    .outer-circle{
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #c4c4c4;
+
+                        .inner-circle{
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            position: relative;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: black;
+                        }
+                    }
+                    p{
+                        color: white;
+                        font-size: 13px;
+                    }
+                    
+            }
 
            } 
+
+
         }
+        
+        .col-links{
+            .column-text{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+
+                .footer-links{
+                    padding-top: 10px;
+                    gap: 5px;
+                    color: white;
+                    
+                }
+                .links{   
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: 15px;
+                        }
+                    
+                
+            }
+
+            }
+           }
+
+           .col-pics{
+            margin-top: 30px;
+                    display: flex;
+                     flex-direction: column;
+                    align-items: center;
+            h3{color: white;
+                span{
+                    text-decoration: underline;
+                }
+            }
+            .footer-images{
+
+                .row-img{                       
+                    display: flex;
+                    gap: 5px;
+
+                    .img{
+                        height: fit-content;
+                        box-shadow: 0 0 7px black;
+                    }
+                }
+            }
+           }
+
     }
 }
-
+}
+//footer section end
 
 
 
@@ -491,8 +721,468 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             }
         }
     }
-    
+    //why us section start
+#why{
+    margin: 5rem 0;
+
+    .container{
+        .row{
+            .left1{
+                height: fit-content;
+                img{
+                    width: 100%;
+                    height: 27.65rem;
+                    
+                    
+                }
+
+                .cards{
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: -4em;
+
+                    .card{
+                        width: 30%;
+                        height: 20vh;
+                        border-radius: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        background-color: rgb(164, 15, 30) ;
+                        border: 2px solid white;
+                        
+                    }
+
+                }
+            }
+
+            .right{
+            
+                display: flex;
+                flex-direction: column;
+                gap: -10px;
+
+                .whyh3{
+                    color: rgb(164, 15, 30);
+                }
+
+                .why-text{
+                    font-weight: 500;
+
+                    span{
+                        color: rgb(164, 15, 30);
+                    }
+                }
+
+                .btn{
+                    width: fit-content;
+                    border-radius: 0;
+                    border: 3px solid rgb(164, 15, 30);
+                    color: rgb(164, 15, 30);
+                    padding-top:-50px ;
+
+                    a{
+                        text-decoration: none;
+                        color: rgb(164, 15, 30);
+                        font-weight: 600;
+                    }
+                }
+
+                .btn:hover{
+                    background-color: rgb(164, 15, 30);
+
+                    a{
+                        color: white;
+                    }
+                }
+            }
+
+          
+        }
+    }
 }
+//why us end
+
+//projects section start
+#projects{
+    padding: 3rem;
+    
+    
+    .container{
+        
+        .row{
+            height: 70vh;
+            .left{
+                background: rgb(164, 15, 30);
+                height: 70vh;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 50px;
+                
+               
+
+
+                .projects-h2{
+
+                    font-size: 60px;
+                    font-weight: 500;
+                }
+
+                .projects-h3{
+                    font-weight: 500;
+                    font-size: 2rem;
+                }
+
+                .projects-text{
+                    padding-top: 50px;
+                    font-weight: 500;
+                    width: 90%;
+                    
+                    .icons{
+                        img{
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        .rightt{
+           
+            .top-pictures{
+                display: flex;
+                height: fit-content;
+
+                .pictures1{
+                    background-image: url(/img/project\ 1.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+                    
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 15px;
+                    }
+
+                    .pictures1:hover{
+
+                        p{
+                           bottom: 45px; 
+                        }
+
+                        
+                    }
+                }
+                .pictures2{
+                    background-image: url(/img/project\ 2.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures3{
+                    background-image: url(/img/project\ 3.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures4{
+                    background-image: url(/img/project\ 4.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures5{
+                    background-image: url(/img/project\ 5.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+                .pictures6{
+                    background-image: url(/img/project\ 6.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24.75vw;
+                    height: 35vh;
+                    border: 1px solid rgb(164, 15, 30);
+                }
+
+            }
+            
+        }
+    }
+} 
+//projects section end
+
+//donations section start
+#donations{
+    margin: 4rem 0;
+    width: 100%;
+    height: 80vh;
+    background-color: dimgrey;
+    background-image: url(/img/donate.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    .txt{
+        padding-left: 10rem;
+        padding-top: 10rem;
+        color: white;
+
+        .donations-h3{
+            font-weight: 500;
+            font-size: 40px;
+            padding-bottom: 4rem;
+        }
+
+        
+
+        .btns{
+            gap: 20px;
+            display: flex;
+
+            form{
+                input{
+                    width: 29rem;
+                    height: 65px;
+                    background-color:transparent ;
+                    border: 2px solid white;
+                }
+
+                input::placeholder{
+                    color: white;
+                }
+            }
+
+            form:hover{
+                input{
+                    border: 2px solid rgb(164, 15, 30);
+                }
+
+                input::placeholder{
+                    color: white;
+                }
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: flex;
+                justify-content: left;
+                
+            }
+            
+
+            .btn1{
+                border: 2px solid white;
+                width: 35%;
+                height: 65px;
+                border-radius: 0;
+                padding-right: 10px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+            }
+
+            .btn1:hover{
+                background-color: transparent;
+            }
+
+            .btn2{
+                border-radius: 0;
+                width: 13%;
+                height: 65px;
+                background: rgb(164, 15, 30);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+            .btn2:hover{
+                    background: transparent;
+                    border: 2px solid rgb(164, 15, 30);
+                    
+                }
+        }
+
+    }
+    
+    
+
+}
+// donations section end
+
+// text section start
+#text{height: 60vh;
+    margin-top: 180px;
+   
+    
+    .text-container{
+    border: 3px solid rgb(164, 15, 30);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto;
+
+    .text1{
+        width: 70%;
+        display: flex;
+        text-align: center;
+
+     
+
+        .text-p{
+            font-weight: 200;
+            font-weight: 400;
+        }
+    }
+
+   
+
+    }
+}
+// text section end
+
+//footer section start
+#footer{ 
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(164, 15, 30);
+    .container{
+        .row{ padding-top: 30px;
+            display: flex;
+            color: white;
+           .col-text{
+           
+
+            .footer-text{
+                color: rgba(255, 255, 255, 0.567);
+            }
+
+            .bottom{
+                
+                .left{
+                    display: flex;
+                    gap: 5px;
+
+                    .first{
+                        size: 0cap;
+
+                        
+                    }
+                    
+                    .outer-circle{
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #c4c4c4;
+
+                        .inner-circle{
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            position: relative;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: black;
+                        }
+                    }
+                    p{
+                        color: white;
+                    }
+                    
+            }
+
+           } 
+
+
+        }
+        
+        .col-links{
+            .column-text{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+
+                .footer-links{
+                    gap: 5px;
+                    color: white;
+                    
+                }
+                .links{   
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    
+                
+            }
+
+            }
+           }
+
+           .col-pics{
+                    display: flex;
+                     flex-direction: column;
+                    align-items: center;
+            h3{color: white;
+                span{
+                    text-decoration: underline;
+                }
+            }
+            .footer-images{
+
+                .row-img{                       
+                    display: flex;
+                    gap: 5px;
+
+                    .img{
+                        height: fit-content;
+                        box-shadow: 0 0 7px black;
+                    }
+                }
+            }
+           }
+
+    }
+}
+}
+//footer section end
+
+}
+
+
 
 
 
