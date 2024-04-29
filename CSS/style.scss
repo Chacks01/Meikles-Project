@@ -169,7 +169,7 @@ table {
 
                     .card{
                         width: 30%;
-                        height: 20vh;
+                        height: 15vh;
                         border-radius: 0;
                         display: flex;
                         align-items: center;
@@ -234,14 +234,14 @@ table {
 
 //projects section start
 #projects{
-    padding: 3rem;
+    padding: 1rem;
         
         .row{
             height: 70vh;
             width: 100%;
             .left{
                 background: rgb(164, 15, 30);
-                height: 70vh;
+                height: 100vh;
                 width: 100%;
                 color: white;
                 display: flex;
@@ -279,17 +279,24 @@ table {
         }
 
         .rightt{
+            
            
             .top-pictures{
                 display: flex;
                 height: fit-content;
                 width: 100%;
 
+                p{
+                    font-size: 13px;
+                    left: 15px;
+                }
+                
+
                 .pictures1{
                     background-image: url(/img/project\ 1.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.77vw;
+                    width: 28.77vw;
                     height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
@@ -300,57 +307,95 @@ table {
                         color: white;
                         font-weight: bold;
                         bottom:  10px;
-                        left: 15px;
+                        left: 5px;
                     }
 
-                    .pictures1:hover{
-
-                        p{
-                           bottom: 45px; 
-                        }
-
-                        
-                    }
+                  
                 }
                 .pictures2{
                     background-image: url(/img/project\ 2.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.77vw;
+                    width: 28.77vw;
                     height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures3{
                     background-image: url(/img/project\ 3.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.77vw;
+                    width: 28.77vw;
                     height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures4{
                     background-image: url(/img/project\ 4.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
+                    width: 28.75vw;
                     height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures5{
                     background-image: url(/img/project\ 5.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
+                    width: 28.75vw;
                     height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures6{
                     background-image: url(/img/project\ 6.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
+                    width: 28.75vw;
                     height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
 
             }
@@ -362,7 +407,7 @@ table {
 
 //donations section start
 #donations{
-    margin: 35rem 0;
+    margin: 45rem 0;
     width: 100%;
     height: 80vh;
     background-color: dimgrey;

@@ -128,7 +128,7 @@ table {
 }
 #why .container .row .left1 .cards .card {
   width: 30%;
-  height: 20vh;
+  height: 15vh;
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -173,7 +173,7 @@ table {
 }
 
 #projects {
-  padding: 3rem;
+  padding: 1rem;
 }
 #projects .row {
   height: 70vh;
@@ -181,7 +181,7 @@ table {
 }
 #projects .row .left {
   background: rgb(164, 15, 30);
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   color: white;
   display: flex;
@@ -210,11 +210,15 @@ table {
   height: fit-content;
   width: 100%;
 }
+#projects .rightt .top-pictures p {
+  font-size: 13px;
+  left: 15px;
+}
 #projects .rightt .top-pictures .pictures1 {
   background-image: url(/img/project\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24.77vw;
+  width: 28.77vw;
   height: 35vh;
   border: 1px solid rgb(164, 15, 30);
   position: relative;
@@ -224,54 +228,91 @@ table {
   color: white;
   font-weight: bold;
   bottom: 10px;
-  left: 15px;
-}
-#projects .rightt .top-pictures .pictures1 .pictures1:hover p {
-  bottom: 45px;
+  left: 5px;
 }
 #projects .rightt .top-pictures .pictures2 {
   background-image: url(/img/project\ 2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24.77vw;
+  width: 28.77vw;
   height: 35vh;
   border: 1px solid rgb(164, 15, 30);
+  position: relative;
+}
+#projects .rightt .top-pictures .pictures2 p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 10px;
+  left: 5px;
 }
 #projects .rightt .top-pictures .pictures3 {
   background-image: url(/img/project\ 3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24.77vw;
+  width: 28.77vw;
   height: 35vh;
   border: 1px solid rgb(164, 15, 30);
+  position: relative;
+}
+#projects .rightt .top-pictures .pictures3 p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 10px;
+  left: 5px;
 }
 #projects .rightt .top-pictures .pictures4 {
   background-image: url(/img/project\ 4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24.75vw;
+  width: 28.75vw;
   height: 35vh;
   border: 1px solid rgb(164, 15, 30);
+  position: relative;
+}
+#projects .rightt .top-pictures .pictures4 p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 10px;
+  left: 5px;
 }
 #projects .rightt .top-pictures .pictures5 {
   background-image: url(/img/project\ 5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24.75vw;
+  width: 28.75vw;
   height: 35vh;
   border: 1px solid rgb(164, 15, 30);
+  position: relative;
+}
+#projects .rightt .top-pictures .pictures5 p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 10px;
+  left: 5px;
 }
 #projects .rightt .top-pictures .pictures6 {
   background-image: url(/img/project\ 6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24.75vw;
+  width: 28.75vw;
   height: 35vh;
   border: 1px solid rgb(164, 15, 30);
+  position: relative;
+}
+#projects .rightt .top-pictures .pictures6 p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 10px;
+  left: 5px;
 }
 
 #donations {
-  margin: 35rem 0;
+  margin: 45rem 0;
   width: 100%;
   height: 80vh;
   background-color: dimgrey;
