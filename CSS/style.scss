@@ -296,9 +296,13 @@ table {
                     width: 90%;
                     
                     .icons{
+                        display: flex;
+                        gap: 10px;
                         img{
                            
                             background-repeat: no-repeat;
+                            height: 40px;
+                            color: green;
                             
                         }
                     }
@@ -871,8 +875,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     
     }
    
-   
-   
  //why us section start
 #why{
     margin: 5rem 0;
@@ -958,17 +960,142 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 //why us end
 
 //projects section start
+// #projects{
+//     padding: 3rem;
+    
+    
+//     .container{
+        
+//         .row{
+//             height: 70vh;
+//             .left{
+//                 background: rgb(164, 15, 30);
+//                 height: 600px;
+//                 color: white;
+//                 display: flex;
+//                 flex-direction: column;
+//                 padding: 20px 50px;
+                
+               
+
+
+//                 .projects-h2{
+
+//                     font-size: 60px;
+//                     font-weight: 500;
+//                 }
+
+//                 .projects-h3{
+//                     font-weight: 500;
+//                     font-size: 2rem;
+//                 }
+
+//                 .projects-text{
+//                     padding-top: 50px;
+//                     font-weight: 500;
+//                     width: 90%;
+                    
+//                     .icons{
+//                         img{
+//                             background-repeat: no-repeat;
+//                         }
+//                     }
+//                 }
+//             }
+
+            
+//         }
+
+//         .rightt{
+           
+//             .top-pictures{
+//                 display: flex;
+                
+
+//                 .pictures{
+//                     width:24.75vw;
+//                     height: 300px;
+//                 }
+
+//                 p{
+//                     font-size: 20px;
+//                 }
+
+//                 .pictures1{
+//                     background-image: url(/img/project\ 1.jpg);
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+//                     border: 1px solid rgb(164, 15, 30);
+//                     position: relative;
+//                     width: 50px;
+                    
+
+//                     p{
+//                         position: absolute;
+//                         color: white;
+//                         font-weight: bold;
+//                         bottom:  10px;
+//                         left: 15px;
+//                     }
+
+//                     .pictures1:hover{
+
+//                         p{
+//                            bottom: 45px; 
+//                         }
+
+                        
+//                     }
+//                 }
+//                 .pictures2{
+//                     background-image: url(/img/project\ 2.jpg);
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+//                     border: 1px solid rgb(164, 15, 30);
+//                 }
+//                 .pictures3{
+//                     background-image: url(/img/project\ 3.jpg);
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+//                     border: 1px solid rgb(164, 15, 30);
+//                 }
+//                 .pictures4{
+//                     background-image: url(/img/project\ 4.jpg);
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+//                     border: 1px solid rgb(164, 15, 30);
+//                 }
+//                 .pictures5{
+//                     background-image: url(/img/project\ 5.jpg);
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+//                     border: 1px solid rgb(164, 15, 30);
+//                 }
+//                 .pictures6{
+//                     background-image: url(/img/project\ 6.jpg);
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+
+//                     border: 1px solid rgb(164, 15, 30);
+//                 }
+
+//             }
+            
+//         }
+//     }
+// } 
+
 #projects{
-    padding: 3rem;
-    
-    
-    .container{
+    margin: 10rem;
+    margin-bottom: 10rem;
         
         .row{
-            height: 70vh;
+            height: 100px;
+            width: 100%;
             .left{
                 background: rgb(164, 15, 30);
-                height: 600px;
+                height: 400px;
+                width: 100%;
                 color: white;
                 display: flex;
                 flex-direction: column;
@@ -989,13 +1116,20 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                 }
 
                 .projects-text{
-                    padding-top: 50px;
+                    padding-top: 10px;
                     font-weight: 500;
                     width: 90%;
+                    font-size: 15px;
                     
                     .icons{
+                        display: flex;
+                        gap: 10px;
                         img{
+                           
                             background-repeat: no-repeat;
+                            height: 40px;
+                            color: green;
+                            
                         }
                     }
                 }
@@ -1005,27 +1139,30 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
 
         .rightt{
-           
+            
+            
             .top-pictures{
+               
                 display: flex;
-                
-
-                .pictures{
-                    width:24.75vw;
-                    height: 300px;
-                }
+                // height: fit-content;
+                width: 100%;
 
                 p{
-                    font-size: 20px;
+                    font-size: 13px;
+                    left: 15px;
+                    margin-bottom:10rem ;
                 }
+                
 
-                .pictures{
+                .pictures1{
                     background-image: url(/img/project\ 1.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
-                    width: 50px;
+                    
                     
 
                     p{
@@ -1033,62 +1170,109 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                         color: white;
                         font-weight: bold;
                         bottom:  10px;
-                        left: 15px;
+                        left: 5px;
                     }
 
-                    .pictures1:hover{
-
-                        p{
-                           bottom: 45px; 
-                        }
-
-                        
-                    }
+                  
                 }
                 .pictures2{
                     background-image: url(/img/project\ 2.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures3{
                     background-image: url(/img/project\ 3.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures4{
                     background-image: url(/img/project\ 4.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures5{
                     background-image: url(/img/project\ 5.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
                 .pictures6{
                     background-image: url(/img/project\ 6.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
+                    position: relative;
+
+                    p{
+                        position: absolute;
+                        color: white;
+                        font-weight: bold;
+                        bottom:  10px;
+                        left: 5px;
+                    }
                 }
 
             }
             
         }
-    }
+    //}
 } 
 //projects section end
 
 //donations section start
 #donations{
-    margin: 4rem 0;
+    margin-top: 30rem;
     width: 100%;
-    height: 80vh;
+    
     background-color: dimgrey;
     background-image: url(/img/donate.jpg);
     background-blend-mode: multiply;
@@ -1187,7 +1371,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 // text section start
 #text{height: 60vh;
-    margin-top: 180px;
+    
    
     
     .text-container{
