@@ -228,8 +228,6 @@ table {
 }
 #projects .rightt .top-pictures {
   display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
   width: 100%;
 }
 #projects .rightt .top-pictures p {
@@ -511,8 +509,6 @@ table {
   gap: 5px;
 }
 #footer .container .row .col-pics .footer-images .row-img .img {
-  height: -moz-fit-content;
-  height: fit-content;
   box-shadow: 0 0 7px black;
 }
 
@@ -627,10 +623,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #why {
     margin: 5rem 0;
   }
-  #why .container .row .left1 {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   #why .container .row .left1 img {
     width: 100%;
     height: 30.45rem;
@@ -667,8 +659,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     color: rgb(164, 15, 30);
   }
   #why .container .row .right .btn {
-    width: -moz-fit-content;
-    width: fit-content;
     border-radius: 0;
     border: 3px solid rgb(164, 15, 30);
     color: rgb(164, 15, 30);
@@ -953,8 +943,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     gap: 5px;
   }
   #footer .container .row .col-pics .footer-images .row-img .img {
-    height: -moz-fit-content;
-    height: fit-content;
     box-shadow: 0 0 7px black;
   }
 }
