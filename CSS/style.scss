@@ -57,21 +57,48 @@ table {
     margin-top: -24px;
     background-color: dimgray;
     background-blend-mode: overlay;
-    background-image: url(/img/banner.jpg);
+    background-image: url(/img/banner.jpg\ 2.jpg);
     height: 100vh;
     background-size: cover;
-    background-position-x: -190px;
     background-repeat: no-repeat;
     width: 100%;
 
-    .mobile-nav{
-        display: none;
-         
+      
+    nav{
+        margin: 10px 0px;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right:20px ;
+
+        img{
+            height: 30px;
+        }
         
         
-    }
+        
+        .hamburger{
+            
+        height: 30px;
+        width: 30px;
+        border: 2px solid rgb(164, 15, 30);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .line{
+            height: 2px;
+            width: 70%;
+            background-color: rgb(164, 15, 30);
+        }
+    }}
+    
   .nav-container{ 
-    padding-top: 40px;      
+    padding-top: 0 40px;      
     display: flex;
     height: 25vh;
     justify-content: space-evenly;
@@ -91,6 +118,7 @@ table {
         display: none;
 
         
+
         
         
         
@@ -98,7 +126,7 @@ table {
         .nav-icons{
             background-color: brown;
             width: 3rem;
-            height: 3.1rem;
+            height: 2.1rem;
 
 
         }
@@ -128,7 +156,7 @@ table {
 
 
                     img{
-                        height: 2rem;
+                        height: 1rem;
 
                     
                     }
@@ -204,7 +232,7 @@ table {
                 }
 
                 .btn{
-                    width: fit-content;
+                    width: auto;
                     border-radius: 0;
                     border: 3px solid rgb(164, 15, 30);
                     color: rgb(164, 15, 30);
@@ -237,11 +265,11 @@ table {
     padding: 1rem;
         
         .row{
-            height: 70vh;
+            height: 100px;
             width: 100%;
             .left{
                 background: rgb(164, 15, 30);
-                height: 100vh;
+                height: 640px;
                 width: 100%;
                 color: white;
                 display: flex;
@@ -269,7 +297,9 @@ table {
                     
                     .icons{
                         img{
+                           
                             background-repeat: no-repeat;
+                            
                         }
                     }
                 }
@@ -280,8 +310,9 @@ table {
 
         .rightt{
             
-           
+            
             .top-pictures{
+               
                 display: flex;
                 height: fit-content;
                 width: 100%;
@@ -289,6 +320,7 @@ table {
                 p{
                     font-size: 13px;
                     left: 15px;
+                    margin-bottom:10rem ;
                 }
                 
 
@@ -297,9 +329,10 @@ table {
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 28.77vw;
-                    height: 35vh;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
+                    
                     
 
                     p{
@@ -317,7 +350,7 @@ table {
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 28.77vw;
-                    height: 35vh;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
 
@@ -334,7 +367,7 @@ table {
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 28.77vw;
-                    height: 35vh;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
 
@@ -350,8 +383,8 @@ table {
                     background-image: url(/img/project\ 4.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 28.75vw;
-                    height: 35vh;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
 
@@ -367,8 +400,8 @@ table {
                     background-image: url(/img/project\ 5.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 28.75vw;
-                    height: 35vh;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
 
@@ -384,8 +417,8 @@ table {
                     background-image: url(/img/project\ 6.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 28.75vw;
-                    height: 35vh;
+                    width: 28.77vw;
+                    height: 200px;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
 
@@ -407,7 +440,7 @@ table {
 
 //donations section start
 #donations{
-    margin: 45rem 0;
+    margin: 60rem 0;
     width: 100%;
     height: 80vh;
     background-color: dimgrey;
@@ -416,6 +449,7 @@ table {
     background-size: cover;
 
     .txt{
+        
         padding-left: 3rem;
         padding-top: 10rem;
         color: white;
@@ -499,7 +533,7 @@ table {
 // text section start
 #text{height: 100vh;
     
-     margin-top: -30rem;
+     margin-top: -50rem;
    
     
     .text-container{
@@ -542,7 +576,7 @@ table {
 //footer section start
 #footer{    
     width: 100%;
-    height: 80vh;
+    height: 520px;
     background-color: rgb(164, 15, 30);
     .container{
         .row{ padding-top: 30px;
@@ -745,28 +779,101 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-    #why{
+.banner{
+        margin-top: -24px;
+        background-color: dimgray;
+        background-blend-mode: overlay;
+        background-image: url(/img/banner.jpg);
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+          
+            .mobile-nav{
+                display: none;
+            }
+
         
-        .container{
-            .row{
-                .left{
-                    .cards{
-                        display: flex;
-                        justify-content: center;
-                        gap: 2rem;
-                        margin-top: -2em;
+      .nav-container{ 
+        padding-top: 40px;      
+        display: flex;
+        height: 25vh;
+        justify-content: space-evenly;
+        width: 100%;
+        align-content: center;
+        
     
-                        .card{
-                            width: 12rem;
-                            height: 9rem;  
-                        }
+        .pc-nav{
+            
+            background-color: white;
+            width: 85% ;
+            height: 31%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 15px black;
+          
     
+            
+    
+            
+            
+            
+    
+            .nav-icons{
+                background-color: brown;
+                width: 3rem;
+                height: 3.1rem;
+    
+    
+            }
+    
+            .center{
+                     justify-content: center;
+                     text-align: center;
+                     align-items: center;
+                
+    
+                ul{
+                    gap: 70px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+    
+                    a:hover{
+                        color: black;
+                        text-decoration: line-through;
                     }
+    
+                    a{
+                        text-decoration: none;
+                        font-weight: 500;
+                        color: rgb(164, 15, 30);
+                        font-size: 20px;
+                       
+    
+    
+                        img{
+                            height: 2rem;
+    
+                        
+                        }
+                    }
+    
+                   
+    
+                   
+    
                 }
             }
         }
     }
-    //why us section start
+    
+    }
+   
+   
+   
+ //why us section start
 #why{
     margin: 5rem 0;
 
@@ -776,7 +883,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                 height: fit-content;
                 img{
                     width: 100%;
-                    height: 27.65rem;
+                    height: 30.45rem;
                     
                     
                 }
@@ -861,7 +968,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             height: 70vh;
             .left{
                 background: rgb(164, 15, 30);
-                height: 70vh;
+                height: 600px;
                 color: white;
                 display: flex;
                 flex-direction: column;
@@ -901,16 +1008,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
            
             .top-pictures{
                 display: flex;
-                height: fit-content;
+                
 
-                .pictures1{
+                .pictures{
+                    width:24.75vw;
+                    height: 300px;
+                }
+
+                p{
+                    font-size: 20px;
+                }
+
+                .pictures{
                     background-image: url(/img/project\ 1.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
-                    height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
                     position: relative;
+                    width: 50px;
                     
 
                     p{
@@ -934,40 +1049,31 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                     background-image: url(/img/project\ 2.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
-                    height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
                 }
                 .pictures3{
                     background-image: url(/img/project\ 3.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
-                    height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
                 }
                 .pictures4{
                     background-image: url(/img/project\ 4.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
-                    height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
                 }
                 .pictures5{
                     background-image: url(/img/project\ 5.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
-                    height: 35vh;
                     border: 1px solid rgb(164, 15, 30);
                 }
                 .pictures6{
                     background-image: url(/img/project\ 6.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 24.75vw;
-                    height: 35vh;
+
                     border: 1px solid rgb(164, 15, 30);
                 }
 
@@ -1115,7 +1221,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 //footer section start
 #footer{ 
     width: 100%;
-    height: 35vh;
+    height: 250px;
     background-color: rgb(164, 15, 30);
     .container{
         .row{ padding-top: 30px;
@@ -1125,7 +1231,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
            
 
             .footer-text{
-                color: rgba(255, 255, 255, 0.567);
+                color: rgb(255, 255, 255, 0.567);
+            }
+
+            .footer-text:hover{
+                color: white;
             }
 
             .bottom{
@@ -1192,6 +1302,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                         }
                     
                 
+            }
+
+            a:hover{
+                color: black
             }
 
             }
