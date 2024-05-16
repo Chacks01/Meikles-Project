@@ -105,6 +105,7 @@ table {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 15px black;
+  display: none;
 }
 .banner .nav-container .pc-nav .nav-icons {
   background-color: brown;
